@@ -1,16 +1,22 @@
 [tool.poetry]
 name = "prediction"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["Guilherme Martinho <gchumbo1@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "~3.12.3"
+ultralytics = "^8.2.6"
 numpy = "^1.26.4"
 pandas = "^2.2.2"
 matplotlib = "^3.8.4"
-
+scikit-learn = "^1.4.2"
+tensorflow = "^2.16.1"
+keras = "^3.3.3"
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.1.2"
+pre-commit = "^3.7.0"
 
 [build-system]
 requires = ["poetry-core"]
